@@ -10,6 +10,10 @@ const Table = ({ props }) => {
     const [itemsPerPage] = useState(10);
     const [filteredData, setFilteredData] = useState(data);
 
+    useEffect(() => {
+        console.log("table data: ",data)
+    },[])
+
     // Handle search filtering
     useEffect(() => {
         if (searchTerm) {

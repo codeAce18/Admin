@@ -18,6 +18,7 @@ export function AppWrapper({ children }: {
     const [activity, setActivity] = useState([]);
     const [allplayers, setAllPlayers] = useState([]);
     const [tasks, setTasks] = useState([]);
+    const [treasurePurchases, setTreasurePurchases] = useState([]);
     const [levels, setLevels] = useState([]);
 
     return (
@@ -45,9 +46,9 @@ export function AppWrapper({ children }: {
             tasks,
             setTasks,
             levels,
-            setLevels
-
-
+            setLevels,
+            treasurePurchases,
+            setTreasurePurchases
         }}>
             {children}
         </AppContext.Provider>

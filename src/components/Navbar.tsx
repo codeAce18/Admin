@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import appLogo from '../assets/images/pirate/Pirate.png';
 import './Navbar.css';  // Custom CSS for the sidebar layout
 import { useLocation } from 'react-router-dom';
-import { faChartLine, faUsers,faBox, faBell, faTurnUp, faListCheck } from '@fortawesome/free-solid-svg-icons'
+import { faChartLine, faUsers, faBox, faBell, faTurnUp, faListCheck } from '@fortawesome/free-solid-svg-icons'
 function Navbar({ children }) {
     const location = useLocation();
     const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -66,7 +66,7 @@ function Navbar({ children }) {
                         </li>
                         <li>
                             <Link to="/players" className={location.pathname === '/players' ? "active nav-item active side-menu_item  rounded d-flex fs-6 justify-content-start align-items-center" : "nav-item side-menu_item  rounded d-flex fs-6 justify-content-start align-items-center"}>
-                                <FontAwesomeIcon icon={faUsers} className='mx-2'/>
+                                <FontAwesomeIcon icon={faUsers} className='mx-2' />
                                 Players
 
                             </Link>
@@ -74,7 +74,7 @@ function Navbar({ children }) {
                         </li>
                         <li>
                             <Link to="/tasks" className={location.pathname === '/tasks' ? "active nav-item active side-menu_item  rounded d-flex fs-6 justify-content-start align-items-center" : "nav-item side-menu_item  rounded d-flex fs-6 justify-content-start align-items-center"}>
-                                <FontAwesomeIcon icon={faListCheck} className='mx-2'/>
+                                <FontAwesomeIcon icon={faListCheck} className='mx-2' />
                                 Tasks
 
                             </Link>
@@ -82,7 +82,7 @@ function Navbar({ children }) {
                         </li>
                         <li>
                             <Link to="/levels" className={location.pathname === '/levels' ? "active nav-item active side-menu_item  rounded d-flex fs-6 justify-content-start align-items-center" : "nav-item side-menu_item  rounded d-flex fs-6 justify-content-start align-items-center"}>
-                                <FontAwesomeIcon icon={faTurnUp} className='mx-2'/>
+                                <FontAwesomeIcon icon={faTurnUp} className='mx-2' />
                                 Levels
 
                             </Link>
@@ -90,7 +90,7 @@ function Navbar({ children }) {
                         </li>
                         <li>
                             <Link to="/notifications" className={location.pathname === '/notifications' ? "active nav-item active side-menu_item  rounded d-flex fs-6 justify-content-start align-items-center" : "nav-item side-menu_item  rounded d-flex fs-6 justify-content-start align-items-center"}>
-                                <FontAwesomeIcon icon={faBell} className='mx-2'/>
+                                <FontAwesomeIcon icon={faBell} className='mx-2' />
                                 Activity
 
                             </Link>
@@ -99,8 +99,8 @@ function Navbar({ children }) {
 
                         <li>
                             <Link to="/treasure-chest-purchase" className={location.pathname === 'treasure-chest-purchase' ? "active nav-item active side-menu_item  rounded d-flex fs-6 justify-content-start align-items-center" : "nav-item side-menu_item  rounded d-flex fs-6 justify-content-start align-items-center"}>
-                                <FontAwesomeIcon icon={faBox} className='mx-2'/>
-                                Treasure Chest (Purchase)
+                                <FontAwesomeIcon icon={faBox} className='mx-2' />
+                                Treasure Purchases
 
                             </Link>
                         </li>

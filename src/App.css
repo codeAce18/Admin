@@ -76,3 +76,7 @@
   --bs-table-bg: rgb(var(--secondary-rgb)) !important;
   --bs-table-border-color: var(--primary08) !important;
 }
+
+.active-btn{
+  color: #0d6efd;
+}

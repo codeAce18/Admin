@@ -288,8 +288,9 @@ export const uploadImage = async (imageFile: File, token: string) => {
     }
 };
 
-
-
-
-
-
+// 20. View All Players
+export const viewAllTreasurePurchases = async (token: string) => {
+    const endpoint = '/api/admin/treasures/purchases';
+    const httpMethod = 'GET';
+    return await fetchApi(endpoint, null, httpMethod, token);
+};
