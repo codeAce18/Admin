@@ -1,0 +1,110 @@
+/* Basic layout using flexbox */
+.main-container {
+    display: flex;
+    transition: all 0.3s ease;
+    /* Smooth transition when toggling the sidebar */
+}
+
+.sidebar {
+    width: 25%;
+    /* Width of the sidebar */
+    /* background-color: #f8f9fa; */
+    /* Sidebar background */
+    padding: 15px;
+    height: 100vh;
+    /* Full height */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease;
+    overflow: hidden;
+}
+
+/* When sidebar is closed, hide it completely */
+.main-container:not(.sidebar-open) .sidebar {
+    width: 0;
+    padding: 0;
+}
+
+.main-content {
+    flex-grow: 1;
+    /* Take the remaining space */
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+}
+
+/* Shift content to the right when sidebar is open */
+.sidebar-open .main-content {
+    /* margin-left: 250px; */
+    width: 75%;
+
+    /* Same width as the sidebar */
+}
+
+.nav-item {
+    padding: 10px 0;
+    padding-left: 1.5rem !important;
+    padding-right: 1rem !important;
+}
+
+/* Optional: styling for the links */
+.nav-item a {
+
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+hr {
+    border-color: #ddd;
+}
+
+.side-menu_item:hover {
+    background-image: linear-gradient(133.59deg, var(--primary05) -26.22%, var( --primary03) 24.83%);
+    color: white !important;
+    border: 5px;
+    font-weight: bold;
+}
+
+/* Media queries for mobile */
+@media (max-width: 768px) {
+    ul {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        width: 100% !important;
+    }
+
+    .sidebar {
+        height: auto !important;
+        width: 100% !important;
+        position: absolute !important;
+    }
+
+    .nav-item {
+        padding: 3px !important;
+    }
+}
+
+li .active {
+
+    border-left: 1px solid rgb(var(--primary-rgb)) !important;
+    border-right: 1px solid rgb(var(--primary-rgb)) !important;
+    opacity: 1;
+
+
+
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+
+
+    background-color: rgba(0, 0, 0, 0.15) !important;
+    
+    /* border-color: rgba(var(--bs-primary-rgb), var(--bs-border-opacity)) !important; */
+
+
+
+
+
+}
